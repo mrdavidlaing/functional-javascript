@@ -286,7 +286,7 @@ assert(squared(2) + squared(3) + cubed(3), FILL_ME_IN, "functions can create new
 
     var numbers = [1, 2, 3];
 
-    _.map(numbers,square);
+    var result = _.map(numbers,square);
 
     assert(result, FILL_ME_IN, "hmmm - where have we seen this before?");
     assert(numbers, FILL_ME_IN, "what happened to the original array?");
@@ -458,7 +458,7 @@ assert(squared(2) + squared(3) + cubed(3), FILL_ME_IN, "functions can create new
                        .reduce(function (sum, x) { return sum + x })
                        .value();
 
-    assert(result === FILL_ME_IN);
+    assert(result, FILL_ME_IN, "what is the value?");
 </pre></dd>
 
 
@@ -558,7 +558,7 @@ CIAPI.streams.SubscribeToPrice(
         }
     }
 
-    assert(productsICanEat.length == FILL_ME_IN);
+    assert(productsICanEat.length, FILL_ME_IN, "how many pizza's can I eat?");
 
     /* now solve in a functional style */
 
@@ -566,7 +566,7 @@ CIAPI.streams.SubscribeToPrice(
 
     /* try using filter() & all() / any() */
 
-    assert(productsICanEat.length, FILL_ME_IN);
+    assert(productsICanEat.length, FILL_ME_IN, "is this still true with a functional worldview?");
 
 </pre></dd>
 
